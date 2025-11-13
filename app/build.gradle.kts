@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.homework1"
+    namespace = "com.example.shoppingcart"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.homework1"
+        applicationId = "com.example.shoppingcart"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

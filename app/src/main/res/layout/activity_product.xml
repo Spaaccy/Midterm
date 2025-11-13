@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_toStartOf="@id/btnCart"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/search_background"
+            android:hint="search"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/btnCart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_background"
+            android:padding="12dp"
+            android:src="@drawable/ic_cart_white"
+            android:contentDescription="Cart"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivProduct"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/oil"
+        android:contentDescription="Oil Product"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/badge_background"
+            android:text="official store"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/badge_blue_background"
+            android:text="free delivery"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Discusses The Factors That Make A Logo Successful By Analyzing The Research, Brainstorming, Sketching, And Stylistic Experiments That Led To Its Development"
+        android:textSize="13sp"
+        android:textColor="#666666"/>
+
+    <!-- Price -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120$"
+            android:textSize="24sp"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tvOriginalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="140$"
+            android:textSize="18sp"
+            android:textColor="#999999"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/offers_background"
+        android:text="Offers"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+    <!-- Installment Options -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:paddingVertical="12dp"
+            android:paddingLeft="10dp"
+            android:text="❮ Various Installment Options"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:paddingVertical="12dp"
+            android:paddingLeft="10dp"
+            android:text="❮ Monthly Installment"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:paddingVertical="12dp"
+            android:paddingLeft="10dp"
+            android:text="❮ Jumia Birthday"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="Add To Cart"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/icon_button_background"
+            android:padding="16dp"
+            android:src="@drawable/ic_phone"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Call"/>
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/icon_button_background"
+            android:padding="16dp"
+            android:src="@drawable/ic_message"
+            android:contentDescription="Message"/>
+    </LinearLayout>
+
+</LinearLayout>
