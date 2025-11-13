@@ -155,10 +155,11 @@
             android:layout_marginBottom="8dp">
 
             <TextView
+                android:id="@+id/subTotalCount"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Subtotal (2 items)"
+                android:text="Subtotal"
                 android:textSize="14sp"
                 android:textColor="#666666"/>
         </LinearLayout>

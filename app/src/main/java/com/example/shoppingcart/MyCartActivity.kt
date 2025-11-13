@@ -12,6 +12,7 @@ class MyCartActivity : AppCompatActivity() {
     private var productPrice = 0
     private lateinit var tvQuantity: TextView
     private lateinit var tvTotal: TextView
+    private lateinit var subTotal: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,8 @@ class MyCartActivity : AppCompatActivity() {
 
         tvQuantity = findViewById(R.id.tvQuantity)
         tvTotal = findViewById(R.id.tvTotal)
+        subTotal = findViewById(R.id.subTotalCount)
+
         val btnMinus = findViewById<ImageView>(R.id.btnMinus)
         val btnPlus = findViewById<ImageView>(R.id.btnPlus)
         val btnPlaceOrder = findViewById<Button>(R.id.btnPlaceOrder)
@@ -52,6 +55,7 @@ class MyCartActivity : AppCompatActivity() {
 
     private fun updateUI() {
         tvQuantity.text = quantity.toString()
+        subTotal.text = "Subtotal (${quantity} items)"
         val total = productPrice * quantity
         tvTotal.text = "$total $"
     }
